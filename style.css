@@ -200,12 +200,13 @@ body {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 800px) {
   .header {
+    width:100vw;
     height: 100vh;
-    background: url("images/mobile/image-hero.jpg");
+    background: url("images/mobile/image-hero.jpg") no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
+
   }
   .header h1 {
     font-size: 40px;
