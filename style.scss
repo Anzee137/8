@@ -1,397 +1,366 @@
-$veryDarkGray:hsl(0, 0%, 41%);
-$darkGray:hsl(0, 0%, 55%);
+$veryDarkGray: hsl(0, 0%, 41%);
+$darkGray: hsl(0, 0%, 55%);
 
-@mixin s($urlToPick){
+@mixin s($urlToPick) {
 	background-blend-mode: overlay;
-	background:url($urlToPick) no-repeat;
-	background-size:cover;
+	background: url($urlToPick) no-repeat;
+	background-size: cover;
 	cursor: pointer;
 }
 
-body{
-	font-size:15px;
+body {
+	font-size: 15px;
 	overflow-x: hidden;
 	box-sizing: border-box;
-
 }
 
-.header{
-	color:white;
+.header {
+	color: white;
+	box-sizing: border-box;
 	background: url("images/desktop/image-hero.jpg") 100% 100%;
-	background-size:cover;
-	background-repeat:no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
 	width: 100vw;
-	min-height: 50vh;
-	.burger{
+	height: 80vh;
+	.burger {
 		display: none;
 	}
 
-	padding:50px 80px 20px 0px;
-	
+	padding: 20px;
 
-	& li{
+	& li {
 		list-style-type: none;
 	}
 
-	.header-link{
-		color:white;
+	.header-link {
+		color: white;
 		font-weight: 400;
-		margin:10px;
+		margin: 10px;
 	}
 
-	
-
-	& h1{
-		border:white solid 2px;
+	& h1 {
+		border: white solid 2px;
 		text-transform: uppercase;
-		font-size:60px;
+		font-size: 60px;
 		padding: 20px;
 		font-weight: 300;
 		min-height: 200px;
 		max-width: 600px;
 		box-sizing: border-box;
 		margin-left: 15vw;
-		margin-top:10vw;
+		margin-top: 10vw;
 		margin-bottom: 100px;
 	}
 
-	& ul{
+	& ul {
 		display: flex;
 		justify-content: flex-end;
-
 	}
 }
 
-.main{
-	margin-top:100px;
+.main {
+	margin-top: 100px;
 	margin-right: 10vw;
 	margin-left: 10vw;
 
-	& div{
+	& div {
 		width: 40vw;
-		position:relative;
+		position: relative;
 	}
 
-	.photo{
+	.photo {
 		z-index: 1;
 		width: 60vw;
 		height: 60vh;
-		
 	}
 
-	.text{
+	.text {
 		z-index: 2;
 		width: 30vw;
 		height: 40vh;
-		top:-40vh;
-		left:45vw;
-		background-color:white;
-		padding:45px;
-
+		top: -40vh;
+		left: 45vw;
+		background-color: white;
+		padding: 45px;
 	}
 
-	& h2{
+	& h2 {
 		font-size: 3vw;
 	}
 
 	& p {
-		font-size:1.3vw;
+		font-size: 1.3vw;
 	}
 
-	.section-2{
+	.section-2 {
 		display: flex;
 		justify-content: space-between;
 
-		& button{
-			background-color:white;
+		& button {
+			background-color: white;
 			width: 9vw;
-			padding:10px;
+			padding: 10px;
 			height: 50px;
-			border:solid 1px;
+			border: solid 1px;
 		}
 
-		& button:hover{
-			background-color:black;
-			color:white;
-			transition:0.5s; 
+		& button:hover {
+			background-color: black;
+			color: white;
+			transition: 0.5s;
 		}
 
 		margin-bottom: 50px;
 	}
 
-	.section-3{
+	.section-3 {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-column-gap: 20px;
 		grid-row-gap: 20px;
 
-		& span{
+		& span {
 			width: 19vw;
-			height:60vh;
-			color:white;
+			height: 60vh;
+			color: white;
 			display: flex;
 			justify-content: center;
 			align-items: flex-end;
-			font-size:30px;
+			font-size: 30px;
 		}
 
-		& span:hover{
+		& span:hover {
 			transition: 0.5s;
-			background-color:rgba(255,255,255,0.6);
-			color:black;
-
+			background-color: rgba(255, 255, 255, 0.6);
+			color: black;
 		}
 	}
 
-
-
-
-
-	.s1{
+	.s1 {
 		@include s("images/desktop/image-deep-earth.jpg");
 	}
 
-	
-
-	.s2{
+	.s2 {
 		@include s("images/desktop/image-night-arcade.jpg");
 	}
 
-	.s3{
+	.s3 {
 		@include s("images/desktop/image-soccer-team.jpg");
 	}
 
-	.s4{
+	.s4 {
 		@include s("images/desktop/image-grid.jpg");
 	}
 
-	.s5{
+	.s5 {
 		@include s("images/desktop/image-from-above.jpg");
 	}
 
-	.s6{
+	.s6 {
 		@include s("images/desktop/image-pocket-borealis.jpg");
 	}
 
-	.s7{
+	.s7 {
 		@include s("images/desktop/image-curiosity.jpg");
 	}
 
-	.s8{
+	.s8 {
 		@include s("images/desktop/image-fisheye.jpg");
 	}
-
 }
 
-
-
-.footer{
-	margin-top:100px;
-	color:white;
+.footer {
+	margin-top: 100px;
+	color: white;
 	background-color: black;
 	height: 100px;
 	width: 100vw;
 	display: flex;
 	justify-content: space-between;
-	padding:20px;
+	padding: 20px;
 
-
-	li{
+	li {
 		list-style-type: none;
 	}
 
-	.footer-link{
-		color:white;
+	.footer-link {
+		color: white;
 		font-weight: 400;
-		margin:10px;
+		margin: 10px;
 	}
 
-	
-
-	& section{
+	& section {
 		width: 50%;
 		text-align: right;
 	}
 
-
-	& p{
-		color:$veryDarkGray;
+	& p {
+		color: $veryDarkGray;
 		margin-right: 5vw;
 	}
 
-	& div{
+	& div {
 		margin-right: 5vw;
 	}
 
-	& .fa{
-		margin:10px;
-
+	& .fa {
+		margin: 10px;
 	}
 
-	& ul{
-		margin-top:30px;
+	& ul {
+		margin-top: 30px;
 		display: flex;
 	}
 
 	& i {
-		padding-bottom:10px;
+		padding-bottom: 10px;
 	}
 
-	& i:hover{
+	& i:hover {
 		text-decoration: underline;
-
 	}
 }
 
-
 @media screen and (max-width: 800px) {
-
-
-	.header{
-		width:100vw;
-		height:100vh;
-		background:url("images/mobile/image-hero.jpg") no-repeat;
-		background-size:cover;
-
+	.header {
+		box-sizing: border-box;
+		width: 100vw;
+		height: 100vh;
+		background: url("images/mobile/image-hero.jpg") no-repeat;
+		background-size: 100% 100%;
 
 		& h1 {
-		font-size:40px;
-		width:70vw;
-		margin-top: 200px;
-
-	}
-
-	.box{
-		display: none;
-	}
-
-	.burger{
-		display: block;
-		position:absolute;
-		width: 30px;
-		height: 20px;
-		top:50px;
-		left:340px;
-		z-index: 4;
-	}
-
-	.header-menu{
-		display: block;
-		background-color:black;
-		position:fixed;
-		top:0;
-		width: 100%;
-		height: 100%;
-		z-index: 3;
-	}
-
-	& ul {
-		display: flex;
-		flex-direction: column;
-		margin-top: 100px;
-
-	}
-
-	& li {
-		margin:10px;
-	}
-
-	}
-
-	.main{
-		margin-left:25px;
-
-		.text{
-			position: static;
+			font-size: 40px;
 			width: 70vw;
+			margin-top: 200px;
+		}
+
+		.box {
+			display: none;
+		}
+
+		.burger {
+			display: block;
+			position: absolute;
+			width: 30px;
+			height: 20px;
+			top: 50px;
+			left: 340px;
+			z-index: 4;
+		}
+
+		.header-menu {
+			display: block;
+			background-color: black;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 3;
+		}
+
+		& ul {
+			display: flex;
+			flex-direction: column;
+			margin-top: 100px;
+		}
+
+		& li {
+			margin: 10px;
+		}
+	}
+
+	.main {
+		margin-left: 25px;
+
+		.text {
+			position: static;
+			width: 80vw;
 		}
 
 		& p {
-			font-size:12px;
+			font-size: 12px;
 		}
 
-		& h2{
-			font-size:30px;
+		& h2 {
+			font-size: 30px;
 		}
 
-		.photo{
+		.photo {
 			width: 80vw;
 			margin-left: 0;
 			height: 30vh;
 		}
 
-		.section-2{
-			display:block;
+		.section-2 {
+			display: block;
+			box-sizing: border-box;
+			padding: 20px;
 			text-align: center;
-			margin-top:20px;
-			& button{
-				width:30vw;
+			margin-top: 10px;
+
+			& button {
+				width: 30vw;
 			}
 		}
 
-		.section-3{
-			grid-template-columns:1fr;
+		.section-3 {
+			grid-template-columns: 1fr;
 
-			& span{
+			& span {
 				width: 80vw;
 				height: 20vh;
 			}
 		}
 
-		.s1{
-		@include s("images/mobile/image-deep-earth.jpg");
-	}
-		.s2{
-		@include s("images/mobile/image-night-arcade.jpg");
+		.s1 {
+			@include s("images/mobile/image-deep-earth.jpg");
+		}
+		.s2 {
+			@include s("images/mobile/image-night-arcade.jpg");
+		}
+
+		.s3 {
+			@include s("images/mobile/image-soccer-team.jpg");
+		}
+
+		.s4 {
+			@include s("images/mobile/image-grid.jpg");
+		}
+
+		.s5 {
+			@include s("images/mobile/image-from-above.jpg");
+		}
+
+		.s6 {
+			@include s("images/mobile/image-pocket-borealis.jpg");
+		}
+
+		.s7 {
+			@include s("images/mobile/image-curiosity.jpg");
+		}
+
+		.s8 {
+			@include s("images/mobile/image-fisheye.jpg");
+		}
 	}
 
-	.s3{
-		@include s("images/mobile/image-soccer-team.jpg");
-	}
-
-	.s4{
-		@include s("images/mobile/image-grid.jpg");
-	}
-
-	.s5{
-		@include s("images/mobile/image-from-above.jpg");
-	}
-
-	.s6{
-		@include s("images/mobile/image-pocket-borealis.jpg");
-	}
-
-	.s7{
-		@include s("images/mobile/image-curiosity.jpg");
-	}
-
-	.s8{
-		@include s("images/mobile/image-fisheye.jpg");
-	}
-	}
-
-	.footer{
+	.footer {
 		display: block;
-		width:100%;
-		height:50vh;
-		padding:10px;
+		width: 100%;
+		height: 50vh;
+		padding: 10px;
 
-		& ul{
+		& ul {
 			display: block;
 		}
 
 		& li {
-			margin-top:15px;
+			margin-top: 15px;
 		}
 
-		& .box1{
+		& .box1 {
 			margin-left: 60px;
 		}
 	}
-
-
-	
-
-
 }
-	

@@ -1,29 +1,36 @@
 body {
   font-size: 15px;
   overflow-x: hidden;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header {
   color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: url("images/desktop/image-hero.jpg") 100% 100%;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
-  min-height: 50vh;
-  padding: 50px 80px 20px 0px;
+  height: 80vh;
+  padding: 20px;
 }
+
 .header .burger {
   display: none;
 }
+
 .header li {
   list-style-type: none;
 }
+
 .header .header-link {
   color: white;
   font-weight: 400;
   margin: 10px;
 }
+
 .header h1 {
   border: white solid 2px;
   text-transform: uppercase;
@@ -32,14 +39,20 @@ body {
   font-weight: 300;
   min-height: 200px;
   max-width: 600px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-left: 15vw;
   margin-top: 10vw;
   margin-bottom: 100px;
 }
+
 .header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .main {
@@ -47,15 +60,18 @@ body {
   margin-right: 10vw;
   margin-left: 10vw;
 }
+
 .main div {
   width: 40vw;
   position: relative;
 }
+
 .main .photo {
   z-index: 1;
   width: 60vw;
   height: 60vh;
 }
+
 .main .text {
   z-index: 2;
   width: 30vw;
@@ -65,17 +81,25 @@ body {
   background-color: white;
   padding: 45px;
 }
+
 .main h2 {
   font-size: 3vw;
 }
+
 .main p {
   font-size: 1.3vw;
 }
+
 .main .section-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 50px;
 }
+
 .main .section-2 button {
   background-color: white;
   width: 9vw;
@@ -83,73 +107,95 @@ body {
   height: 50px;
   border: solid 1px;
 }
+
 .main .section-2 button:hover {
   background-color: black;
   color: white;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .main .section-3 {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
+
 .main .section-3 span {
   width: 19vw;
   height: 60vh;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-size: 30px;
 }
+
 .main .section-3 span:hover {
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: rgba(255, 255, 255, 0.6);
   color: black;
 }
+
 .main .s1 {
   background-blend-mode: overlay;
   background: url("images/desktop/image-deep-earth.jpg") no-repeat;
   background-size: cover;
   cursor: pointer;
 }
+
 .main .s2 {
   background-blend-mode: overlay;
   background: url("images/desktop/image-night-arcade.jpg") no-repeat;
   background-size: cover;
   cursor: pointer;
 }
+
 .main .s3 {
   background-blend-mode: overlay;
   background: url("images/desktop/image-soccer-team.jpg") no-repeat;
   background-size: cover;
   cursor: pointer;
 }
+
 .main .s4 {
   background-blend-mode: overlay;
   background: url("images/desktop/image-grid.jpg") no-repeat;
   background-size: cover;
   cursor: pointer;
 }
+
 .main .s5 {
   background-blend-mode: overlay;
   background: url("images/desktop/image-from-above.jpg") no-repeat;
   background-size: cover;
   cursor: pointer;
 }
+
 .main .s6 {
   background-blend-mode: overlay;
   background: url("images/desktop/image-pocket-borealis.jpg") no-repeat;
   background-size: cover;
   cursor: pointer;
 }
+
 .main .s7 {
   background-blend-mode: overlay;
   background: url("images/desktop/image-curiosity.jpg") no-repeat;
   background-size: cover;
   cursor: pointer;
 }
+
 .main .s8 {
   background-blend-mode: overlay;
   background: url("images/desktop/image-fisheye.jpg") no-repeat;
@@ -163,50 +209,66 @@ body {
   background-color: black;
   height: 100px;
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px;
 }
+
 .footer li {
   list-style-type: none;
 }
+
 .footer .footer-link {
   color: white;
   font-weight: 400;
   margin: 10px;
 }
+
 .footer section {
   width: 50%;
   text-align: right;
 }
+
 .footer p {
   color: dimgray;
   margin-right: 5vw;
 }
+
 .footer div {
   margin-right: 5vw;
 }
+
 .footer .fa {
   margin: 10px;
 }
+
 .footer ul {
   margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .footer i {
   padding-bottom: 10px;
 }
+
 .footer i:hover {
   text-decoration: underline;
 }
 
 @media screen and (max-width: 800px) {
   .header {
-    width:100vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100vw;
     height: 100vh;
     background: url("images/mobile/image-hero.jpg") no-repeat;
-    background-size: cover;
-
+    background-size: 100% 100%;
   }
   .header h1 {
     font-size: 40px;
@@ -235,20 +297,24 @@ body {
     z-index: 3;
   }
   .header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 100px;
   }
   .header li {
     margin: 10px;
   }
-
   .main {
     margin-left: 25px;
   }
   .main .text {
     position: static;
-    width: 70vw;
+    width: 80vw;
   }
   .main p {
     font-size: 12px;
@@ -263,14 +329,18 @@ body {
   }
   .main .section-2 {
     display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .main .section-2 button {
     width: 30vw;
   }
   .main .section-3 {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   .main .section-3 span {
     width: 80vw;
@@ -324,7 +394,6 @@ body {
     background-size: cover;
     cursor: pointer;
   }
-
   .footer {
     display: block;
     width: 100%;
@@ -341,3 +410,4 @@ body {
     margin-left: 60px;
   }
 }
+/*# sourceMappingURL=style.css.map */
